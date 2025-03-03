@@ -15,7 +15,7 @@ hr {display: none;}
 /* HEADER */
 header {
     background: linear-gradient(180deg, rgba(0,160,198,1) 0%, rgba(3,109,134,1) 68%);
-    text-align: center;
+    text-align: left;
     text-transform: uppercase;
     font-weight: bold;
     color: white;
@@ -35,7 +35,7 @@ header nav ul {
     padding: 0;
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
+    flex-wrap: wrap-reverse;
     gap: 15px;
 }
 header nav li {
@@ -61,7 +61,35 @@ main {
     padding: 2em 1em;
     margin-bottom: 1.5em;
 }
-
+/* VIDEO & NOVITà */
+ #Video  {
+    display: flex;
+    flex-wrap: wrap; /* Permette il wrapping su schermi piccoli */
+    gap: 20px; /* Spazio tra le sezioni */
+    justify-content: center; /* Centra gli elementi */
+    align-items: flex-start; /* Allinea gli elementi in alto */
+    margin-top: 2%;
+}
+iframe {
+    display: flex;
+    justify-content: end;
+    flex: 1;
+    min-width: 300px;
+    max-width: 48%;
+    height: auto;
+    margin-left: 2%;
+    margin-bottom: 2%;
+}
+section #locky{
+    display: flex;
+    justify-content: flex-start;
+    min-width: 300px;
+    max-width: 35%;
+    background: #f8f8f8;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.1);
+}
 /* GRIGLIA RESPONSIVE ARTICOLI */
 .articoli {
     display: grid;
