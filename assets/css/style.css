@@ -184,7 +184,9 @@ aside div p:last-child {
 
 
 /* FOOTER */
-footer {
+@media print {
+    
+} footer {
     background: rgb(53,53,53);
     background: linear-gradient(0deg, rgba(53,53,53,1) 0%, rgba(5,85,103,1) 68%);
     box-shadow: 0 3px 3px #444;
@@ -192,6 +194,7 @@ footer {
     padding: 1em;
     text-align: center;
     font-size: 1.2rem;
+    display: none;
 }
 footer a {
     color: fuchsia;
